@@ -1,0 +1,18 @@
+load("@python_deps//:requirements.bzl", "requirement")
+
+py_test(
+  name = "main_test",
+  srcs = ["main_test.py"],
+  deps = [
+    "main",
+  ],
+)
+
+py_binary(
+  name = "main",
+  srcs = ["main.py"],
+  deps = [
+    "//libs/python/response",
+    requirement("Flask"),
+  ],
+)
