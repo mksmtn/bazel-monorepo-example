@@ -1,0 +1,13 @@
+py_library(
+  name = "response",
+  srcs = ["response.py"],
+  visibility = ["//visibility:public"],
+)
+
+py_test(
+  name = "response_test",
+  srcs = ["response_test.py"],
+  deps = [
+    "response"
+  ]
+)
