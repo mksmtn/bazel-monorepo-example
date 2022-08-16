@@ -1,0 +1,9 @@
+[ ] create a library with some logic
+[ ] add tests for the library
+[ ] use the library
+[ ] test an executable project
+[ ] run an executable project in k8s
+[ ] add more services talking to each other
+[ ] add UI
+[ ] add hooks, automated formatting, static analysis for TS and Python
+[ ] write documentation
