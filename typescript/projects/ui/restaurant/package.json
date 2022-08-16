@@ -1,0 +1,11 @@
+{
+  "name": "lka_isolated",
+  "version": "1.0.0",
+  "description": "Lka isolated project uses npm instead of yarn and required different version of Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maxim Matyunin <krabovm@gmail.com>",
+  "license": "MIT"
+}

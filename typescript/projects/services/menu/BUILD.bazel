@@ -1,0 +1,20 @@
+load("@global_npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+  name = "main",
+  srcs = [
+    "src/main.ts",
+    "src/menu.controller.ts",
+    "src/menu.module.ts",
+    "src/menu.service.ts",
+  ],
+  tsconfig = '//typescript:tsconfig.json',
+  composite = True,
+  declaration = True,
+  deps = [
+    "//typescript/libs/dtos",
+    "@global_npm//@types",
+    "@global_npm//@nestjs/core",
+    "@global_npm//@nestjs/common",
+  ],
+)

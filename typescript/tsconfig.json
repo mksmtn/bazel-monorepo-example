@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "composite": true,
+    "declaration": true,
+    "target": "ES2020",
+    "moduleResolution": "NodeNext",
+    "rootDirs": [
+      "libs",
+      "projects",
+      "../bazel-out/darwin-fastbuild/bin/typescript/libs",
+      "../bazel-out/darwin-fastbuild/bin/typescript/projects",
+      "../bazel-out/darwin_arm64-fastbuild/bin/typescript/libs",
+      "../bazel-out/darwin_arm64-fastbuild/bin/typescript/projects",
+      "../bazel-out/k8-fastbuild/bin/typescript/libs",
+      "../bazel-out/k8-fastbuild/bin/typescript/projects",
+      "../bazel-out/x64_windows-fastbuild/bin/typescript/libs",
+      "../bazel-out/x64_windows-fastbuild/bin/typescript/projects",
+      "../bazel-out/darwin-dbg/bin/typescript/libs",
+      "../bazel-out/darwin-dbg/bin/typescript/projects",
+      "../bazel-out/k8-dbg/bin/typescript/libs",
+      "../bazel-out/k8-dbg/bin/typescript/projects",
+      "../bazel-out/x64_windows-dbg/bin/typescript/libs",
+      "../bazel-out/x64_windows-dbg/bin/typescript/projects",
+    ]
+  }
+}

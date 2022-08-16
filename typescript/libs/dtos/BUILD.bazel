@@ -1,0 +1,23 @@
+load("@global_npm//@bazel/typescript:index.bzl", "ts_project")
+load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
+
+ts_project(
+  name = "dtos_ts",
+  srcs = [
+    "src/index.ts",
+    "src/menu-item.dto.ts",
+  ],
+  tsconfig = '//typescript:tsconfig.json',
+  composite = True,
+  declaration = True,
+  root_dir = 'src',
+)
+
+js_library(
+  name = "dtos",
+  package_name=":dtos",
+  deps = [
+    "dtos_ts"
+  ],
+  visibility = ['//typescript:__subpackages__'],
+)
